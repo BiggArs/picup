@@ -37,7 +37,7 @@ else {
 }
 
 my @files = grep { 
-	-e && -r && /(jpe?g|png|tiff?|gif)$/i 
+	-e && -r && /(jpe?g|png|tiff?|bmp|gif)$/i 
 	} @ARGV;
 
 die "Не найдено файлов для загрузки\n" unless @files;
